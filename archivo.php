@@ -14,40 +14,42 @@
      <body>
              <?php
 
+                $para= 'qadros.ingenieros@gmail.com';
+
+
+                $Nombre=   $_POST['Nombre'];
+                $Correo=   $_POST['Correo'];
+                $Teléfono= $_POST['Teléfono'];             
+                $mensaje=  $_POST['mensaje'];
                 
-                $Nombre= $_POST["Nombre"];
-                $Correo= $_POST["Correo"];
-                $Teléfono= $_POST["Teléfono"];             
-                $mensaje= $_POST["mensaje"];
+
                 
 
-                $para= "qadros.ingenieros@gmail.com";
 
-
-                $asunto= "Mensaje Nuevo";
+                $header= 'Mensaje Nuevo desde la pagina QadrosIngenieros';
                 
                 $Mensaje = "   
 
 
-               Nombre del cliente:  ".$Nombre."
-               email:               ".$Correo."
-               tel:                 ".$Teléfono."
-               mensaje:             ".$mensaje."
+               Nombre del cliente:  '.$Nombre';
+               email:               '.$Correo';
+               tel:                 '.$Teléfono';
+               mensaje:             ''.$mensaje';
               
 
                ";   
 
                 
                 
-               mail($para,$asunto,utf8_decode($Mensaje)); 
+               mail($para,$header,utf8_decode($Mensaje)); 
 
 
-	      echo "<p>Hemos recibido su mensaje correctamente, pronto le contestaremos, gracias<-p>";
+	      echo '<p>Hemos recibido su mensaje correctamente, pronto le contestaremos, gracias<-p>';
              ?>
       
 
      </body>
 
-<a href="../index.html"></a>
+<a href='../index.html'></a>
 
 </html>
