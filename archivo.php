@@ -17,8 +17,7 @@
                 
                 $Nombre= $_POST["Nombre"];
                 $Correo= $_POST["Correo"];
-                $Teléfono= $_POST["Teléfono"];
-                                
+                $TelÃ©fono= $_POST["TelÃ©fono"];             
                 $mensaje= $_POST["mensaje"];
                 
 
@@ -27,16 +26,16 @@
 
                 $asunto= "Mensaje Nuevo";
                 
-            $Mensaje = "   
+                $Mensaje = "   
 
 
-              Nombre del cliente: ".$Nombre."
-              email:              ".$Correo."
-              tel:               ".$Teléfono."
-              mensaje:            ".$mensaje."
+               Nombre del cliente:  ".$Nombre."
+               email:               ".$Correo."
+               tel:                 ".$TelÃ©fono."
+               mensaje:             ".$mensaje."
               
 
-              ";   
+               ";   
 
                 
                 
